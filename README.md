@@ -1,13 +1,23 @@
-# Python set proxy - hot patch proxy setting for Python script and Jupyter Notebook
+# Python set proxy
+
+Hot patch proxy setting for Python script and Jupyter Notebook
 
 usage:
-Set the proxy
+
+## Set proxy from WSL's parent Windows machine
 
 ```python
 import myproxy
 ```
 
-Check current ip
+## Set proxy manually 
+
+```python
+from myproxy import set_proxy
+set_proxy('http://localhost:8080')
+```
+
+## Check current ip
 
 ```python
 from myproxy import get_current_ip
