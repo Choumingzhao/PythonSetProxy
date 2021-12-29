@@ -1,6 +1,14 @@
 # Seting the environment variable to the proxy server."""
 import os
 
+def get_current_ip():
+    """
+    Get if current geoIP corresponds to proxy setting.
+    """
+    import urllib.request as ur 
+    import json
+    return json.loads(ur.urlopen("https://api.ip.sb/geoip").read())
+
 # get IP of parent Windows machine
 nameserver = os.environ['nameserver']
 if nameserver:
