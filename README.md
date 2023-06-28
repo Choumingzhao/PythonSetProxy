@@ -14,5 +14,7 @@ usage:
 >>> set_wsl_proxy()
 # Check current ip
 >>> print(f"IP: {get_ip()}")
+# Unset the proxy setting (delete related environemnt variables)
+>>> unset_proxy()
 ```
 
