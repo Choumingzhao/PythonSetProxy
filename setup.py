@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='myproxy',
-      version='1.1',
+      version='1.2',
       description="Seting the http proxy for python scripts",
       author="Jialin Wang",
       author_email="choumingzhao@outlook.com",

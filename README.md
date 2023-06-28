@@ -17,4 +17,3 @@ usage:
 # Unset the proxy setting (delete related environemnt variables)
 >>> unset_proxy()
 ```
-

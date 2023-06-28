@@ -18,7 +18,7 @@ def get_geoip():
 
 def set_proxy(host='localhost', port='17890', verbose=True):
     """Set the proxy server by environment variable for higher version of python3"""
-    proxy_server = f"{host}:{port}"
+    proxy_server = f"http://{host}:{port}"
     os.environ['HTTP_PROXY'] = proxy_server
     os.environ['HTTPS_PROXY'] = proxy_server
     os.environ['ALL_PROXY'] = proxy_server
