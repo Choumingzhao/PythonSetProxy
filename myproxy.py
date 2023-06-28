@@ -17,12 +17,8 @@ def set_proxy(proxy_server=None):
         proxy_config = proxy_server
     else:
         # get IP of parent Windows machine
-        nameserver = os.environ['nameserver']
-        if nameserver:
-            proxy_config = f"http://{nameserver}:17890"
-        else:
-            raise Exception("Cannot find IP for parent Windows machine.")
-
+        nameserver = os.environ.get('nameserver', 'localhost')
+        proxy_config = f"http://{nameserver}:17890"
     os.environ['http_proxy'] = proxy_config
     os.environ['https_proxy'] = proxy_config
 

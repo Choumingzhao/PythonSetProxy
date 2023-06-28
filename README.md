@@ -10,7 +10,7 @@ usage:
 import myproxy
 ```
 
-## Set proxy manually 
+## Set proxy manually  
 
 ```python
 from myproxy import set_proxy
